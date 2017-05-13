@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.darlington.quizapp.UserInfos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please take your time to answer the questions. This will enable us serve you better."
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name:"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address:"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif"
+            android:inputType="textEmailAddress"/>
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="Gender:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Male"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Female"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/ageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="Age:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/ageGroupOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="10 - 18 years"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/ageGroupTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="19 - 25 years"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/ageGroupThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="26 - 35 years"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/ageGroupFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Above 35 years"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Occupation(s):"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="serif"/>
+
+        <CheckBox
+            android:id="@+id/occupationOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Developer"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/occupationTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Developer"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/occupationThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engineer"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/occupationFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accountant"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/occupationFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business tycoon"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/occupationSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Managers"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/occupationSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Academia"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/occupationOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:fontFamily="serif"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/startTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:fontFamily="serif"
+                android:layout_alignParentRight="true"
+                android:onClick="startQuiz"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
